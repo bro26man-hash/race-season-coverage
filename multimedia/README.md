@@ -1,17 +1,12 @@
 # Multimedia
 
-Visual and audio assets for race-season coverage.
+On-track photos, onboard video clips, telemetry visualizations, and broadcast highlights.
 
-## Structure
+## Suggested Sub-Folders
 
-- `images/` — Track photography, diagrams, infographics, driver portraits
-- `videos/` — Race highlights, analysis clips, onboard footage references
-- `audio/` — Commentary clips, interviews, sound analysis (engine notes, tire squeal)
-- `graphics/` — Custom data visualizations, cornering-g plots, telemetry mockups
+- `multimedia/photos/` — Pit lane, podium, paddock action
+- `multimedia/video/` — Onboard footage, replay clips, features
+- `multimedia/telemetry/` — GPS tracks, acceleration plots, speed charts
+- `multimedia/audio/` — Driver radio, commentary, ambient track audio
 
-## Guidelines
-
-- File naming: `YYYY-MM-DD_event_description.ext` (e.g., `2025-09-14_silverstone-cornering-analysis.png`)
-- Alt text and captions required for all images.
-- Video references should include timestamp and source link.
-- Logos and branding should follow the team/series identity guidelines.
+Organize by race/event name for easy cross-referencing from your articles.

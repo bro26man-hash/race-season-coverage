@@ -1,16 +1,17 @@
 # Data
 
-Structured datasets, telemetry extracts, and analytics for race-season coverage.
+Structured datasets to power your race-season analysis.
 
-## Structure
+## Suggested Sub-Folders
 
-- `telemetry/` — Lap-by-lap timing, sector splits, speed trap data
-- `analytics/` — Cornering-g profiles, tire-degradation models, fuel-consumption analysis
-- `references/` — Bibliography, source links, fact-check logs
+- `data/lap-sheets/` — Per-lap timing, sector splits, gaps
+- `data/results/` — Race and qualifying results, points tables
+- `data/circuits/` — Corner maps, elevation profiles, track specs
+- `data/historical/` — Year-over-year comparisons, record laps
 
-## Guidelines
+### File Formats
 
-- All datasets should include a `README.md` describing fields, units, and collection methodology.
-- Prefer open formats: CSV, JSON, Parquet.
-- Telemetry data should be time-synced and labeled with track sector boundaries.
-- Statistical summaries should include sample sizes and confidence intervals where applicable.
+- CSV for tabular timing data
+- JSON for structured metadata
+- GeoJSON for circuit maps
+- Keep source attribution in a README.md inside each race folder.

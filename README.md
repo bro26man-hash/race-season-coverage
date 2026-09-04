@@ -1,41 +1,32 @@
-# race-season-coverage
+# Race Season Coverage
 
-Comprehensive race-season coverage with technical analysis, multimedia, and data archives — cornering physics, driver demands, and racing dynamics.
+Comprehensive race season coverage with technical cornering analysis, multimedia, and data resources.
 
-## Repository Structure
+## Contents
+
+- **Articles** — In-depth technical notes, race analyses, and driver profiles
+- **Multimedia** — Photos, videos, and audio highlights
+- **Data** — Timing data, telemetry, statistics, and analytics
+
+## Purpose
+
+This repository serves as a central hub for race season journalism, combining on-track narrative with rigorous technical analysis of cornering physics, aerodynamic forces, and driver performance under extreme G-loads.
+
+## Structure
 
 ```
 race-season-coverage/
-├── README.md
-├── articles/
-│   └── technical-notes/
-│       └── cornering-physics.md
-├── data/
-└── multimedia/
+├── README.md                  ← You are here
+├── articles/                  ← Written technical coverage
+│   └── technical-notes/       ← Physics, engineering and science notes
+├── multimedia/                ← Visual and audio assets
+└── data/                      → Telemetry, timing, and statistics
 ```
 
-## What's in This Repo
+## Topics Covered
 
-| Area | Content |
-|---|---|
-| **Articles** | Technical deep-dives, race debriefs, driver-performance analysis |
-| **Data** | Telemetry extracts, sector times, g-load datasets |
-| **Multimedia** | On-track photos, video highlights, acceleration plots |
-| **Technical Notes** | Physics-of-racing reference material |
-
-## Core Themes
-
-- **Cornering Physics** — lateral g-loads, centripetal acceleration, downforce effects
-- **Driver Demands** — g-tolerance, vision-g-loc progression, cardiovascular conditioning
-- **Racing Dynamics** — car balance, trail-braking, weight transfer
-
-## Getting Started
-
-```bash
-git clone https://github.com/bro26man-hash/race-season-coverage.git
-cd race-season-coverage
-```
-
-## License
-
-Unlicensed — all rights reserved by the author.
+- Cornering physics & lateral G-loads
+- Centripetal acceleration & racing line dynamics
+- Aerodynamic downforce & grip
+- Driver physical demands & G-tolerance
+- Race strategy & data analysis

@@ -1,54 +1,43 @@
 # Race Season Coverage
 
-Comprehensive motorsport journalism repository covering the full race season with technical depth, multimedia assets, and data-driven analysis.
+## Comprehensive Motorsport Journalism Hub
 
-## 📂 Project Structure
+This repository serves as the central workspace for professional race season coverage, combining narrative storytelling with rigorous technical analysis.
+
+### 📂 Repository Structure
 
 ```
 race-season-coverage/
-├── README.md                  # This file — project overview
-├── articles/                  # Written coverage
-│   ├── technical-notes/       # Deep-dive technical reference documents
-│   ├── race-reports/          # Event summaries and podium analyses
-│   └── driver-profiles/       # Driver spotlights and career pieces
-├── multimedia/                # Visual and audio assets
-│   ├── photos/                # Race photography and infographics
-│   ├── videos/                # Highlights and analysis clips
-│   └── audio/                 # Podcasts and commentary recordings
-└── data/                      # Raw and processed datasets
-    ├── telemetry/             # Lap-time and sector data
-    ├── g-force/               # G-load measurements and analysis
-    └── weather/               # Track conditions and forecasts
+├── README.md
+├── articles/           # Written coverage — race reports, driver profiles, technical analyses
+│   ├── technical-notes/  # Deep-dive physics and engineering reference files
+│   │   └── cornering-physics.md
+│   └── ...
+├── multimedia/         # Photo assets, video embeds, diagrams, telemetry visualizations
+│   ├── images/       # Race photos, corner action shots, telemetry plots
+│   └── diagrams/     # Technical diagrams — aerodynamic setups, circuit corner profiles
+└── data/               # Datasets, telemetry references, and statistical records
+    ├── telemetry/      # Lap-time data, sector comparisons, g-force traces
+    └── records/        # Historical benchmarks and category records
 ```
 
-## 🏁 Purpose
+### 🏎️ Focus Areas
 
-This repository supports in-depth race season coverage with a focus on:
+- **Technical Cornering Analysis** — Lateral G-loads, centripetal acceleration, downforce dynamics, and the physical demands on drivers
+- **Race Strategy** — tyre management, fuel calculations, pit-window optimisation
+- **Driver Profiles** — physical conditioning, reflexes, and racing-line philosophy
+- **Data Journalism** — Telemetry-derived insights, statistical comparisons, and performance metrics
 
-- **Technical cornering analysis** — lateral G-loads, centripetal acceleration, and the physics of high-speed circuit corners
-- **Driver physical demands** — G-tolerance, biomechanical stress, and human limits under racing loads
-- **Data-driven storytelling** — telemetry, G-force data, and weather context woven into narrative coverage
+### 📝 Writing Conventions
 
-## 📝 Key Reference: Cornering Physics
+- All technical notes in `articles/technical-notes/` should cite primary sources and reference standard gravity (g₀ = 9.80665 m/s²)
+- Multimedia assets should be optimised for web and captioned with metadata
+- Data files should include source attribution and retrieval dates
 
-See [`articles/technical-notes/cornering-physics.md`](articles/technical-notes/cornering-physics.md) for a curated extraction of key facts from the Wikipedia article on **G-force**, covering:
+### 🔧 Technical Reference
 
-- Lateral G-loads through corners
-- Centripetal acceleration and the v²/(2s) relationship
-- The role of downforce and aerodynamic loads
-- Physical demands and human tolerance limits for racing drivers
+Key physics concepts for cornering analysis are documented in `articles/technical-notes/cornering-physics.md`, derived from Wikipedia source material on G-force, centripetal acceleration, and downforce.
 
-## 🔧 Usage
+### License
 
-- **Writers**: Reference `articles/technical-notes/` for physics context before drafting race narratives
-- **Data team**: Add raw telemetry and G-force datasets under `data/`
-- **Media team**: Store photos, videos, and audio clips under `multimedia/`
-
-## 📚 Sources
-
-Cornering physics facts sourced from the Wikipedia article on **G-force**:
-https://en.wikipedia.org/wiki/G-force
-
-## 🤝 Contributing
-
-Add new articles, multimedia, or data files following the folder structure above. Keep technical notes in Markdown for easy cross-referencing.
+This project is open and available for reference and collaboration.

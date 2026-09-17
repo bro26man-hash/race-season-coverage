@@ -1,36 +1,33 @@
 # Race Season Coverage
 
-**Technical race-season coverage** with depth, rigor, and narrative flair — cornering physics, driver physiology, and racing dynamics.
+Comprehensive race season coverage with technical analysis, multimedia assets, and data-driven insights for motorsport journalism.
 
-## Purpose
+## Overview
 
-This repository serves as a central hub for in-depth race-season journalism. It combines:
-
-- **Technical analysis** of cornering forces, G-loads, and vehicle dynamics
-- **Driver demand profiles** — the physical and cognitive toll of high-G racing
-- **Multimedia assets** — diagrams, telemetry screenshots, and video references
-- **Open data** — lap-time datasets, telemetry exports, and statistical summaries
+This repository supports in-depth race season reporting, combining engineering rigor with storytelling. The focus is on **cornering physics**, **driver physical demands**, and **aerodynamic principles** that define modern motorsport.
 
 ## Folder Structure
 
-| Folder | Contents |
-|---|---|
-| `articles/` | Long-form articles, technical notes, and analysis posts |
-| `articles/technical-notes/` | Deep-dives into physics, engineering, and physiology |
-| `multimedia/` | Diagrams, infographics, telemetry plots, and video clips |
-| `data/` | Raw datasets, CSV exports, lap-time tables, and model inputs |
+```
+race-season-coverage/
+├── README.md
+├── articles/            # Written coverage: features, technical briefs, race notes
+│   └── technical-notes/ # Deep-dive reference files (physics, data, diagrams)
+├── multimedia/          # Images, audio, video, and interactive assets
+└── data/                # Raw and processed datasets: lap times, telemetry, G-loads
+```
 
-## Topics Covered
+## Key Areas of Focus
 
-- **Cornering Physics** — lateral G-loads, centripetal acceleration, tire grip circles
-- **Downforce & Aerodynamics** — how aero generates mechanical grip through corners
-- **Driver Tolerance** — human limits under sustained and peak G-conditions
-- **Telemetry Analysis** — extracting physics insights from timing and sensor data
+- **Cornering Physics** — Lateral G-loads, centripetal acceleration, and the forces acting through corners
+- **Aerodynamics & Downforce** — How downforce increases tire grip and enables faster cornering speeds
+- **Driver Demands** — Physical tolerances, g-force exposure, and the limits of the human body under racing conditions
+- **Telemetry & Data** — Quantitative analysis of car performance and driver inputs
 
-## Read the Core Reference
+## Getting Started
 
-Start here → [`articles/technical-notes/cornering-physics.md`](articles/technical-notes/cornering-physics.md)
+Each `articles/technical-notes/` file is a self-contained reference document that can be cited directly in race coverage. Multimedia assets should be organized by event or theme. Data files include raw telemetry extracts and processed summaries.
 
-## License
+## Sources
 
-Content © 2025 Race Season Coverage. Open for editorial use.
+Technical notes are grounded in peer-reviewed and encyclopedic sources, including Wikipedia articles on G-force, Downforce, and related motorsport engineering topics.

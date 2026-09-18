@@ -2,50 +2,54 @@
 
 Raw and processed datasets for race season coverage.
 
-## Structure
+## Subdirectories
 
-```
-data/
-├── telemetry/      ← GPS, acceleration, braking data
-├── race-results/   ← Official results, sector times
-└── driver-metrics/ ← Physical & performance data
-```
+| Path | Purpose |
+|---|---|
+| `telemetry/` | GPS tracks, acceleration (g-load) data, braking points, throttle/brake traces |
+| `race-results/` | Official classifications, sector times, pit stop data, DRS activation logs |
+| `driver-metrics/` | Physical performance data, heart rate, g-tolerance assessments, reaction time tests |
 
 ## Data Dictionary
 
-### Telemetry
+### Telemetry Files
+
 | Field | Unit | Description |
 |---|---|---|
-| `lat_g` | g | Lateral G-load at each sampling point |
-| `lon_g` | g | Longitudinal G-load (brake/accel) |
-| `speed_kmh` | km/h | Instantaneous speed |
+| `lat_g` | g₀ | Lateral g-load (cornering) |
+| `long_g` | g₀ | Longitudinal g-load (braking/acceleration) |
+| `vert_g` | g₀ | Vertical g-load (downforce + road surface) |
+| `speed` | km/h | Vehicle speed at sensor sample |
+| `throttle_pos` | % | Throttle position (0–100) |
 | `brake_pressure` | bar | Brake pedal pressure |
-| `throttle_pos` | % | Throttle position |
-| `steering_angle` | deg | Steering wheel angle |
+| `steering_angle` | degrees | Steering wheel angle |
+| `lat_accel` | m/s² | Raw lateral acceleration (before g-conversion) |
 
-### Race Results
+### Race Results Files
+
 | Field | Unit | Description |
 |---|---|---|
-| `position` | — | Finishing position |
-| `gap_to_p1` | s | Gap to pole position |
-| `sector_times` | s | Split times per sector |
-| `pit_loss` | s | Total pit stop time loss |
+| `sector_time` | seconds | Individual sector time |
+| `gap_to_leader` | seconds | Gap to fastest time in session |
+| `pit_stop_time` | seconds | Total pit stop duration (in/out + service) |
+| `drs_activated` | bool | Whether DRS was deployed in sector |
 
-### Driver Metrics
+### Driver Metrics Files
+
 | Field | Unit | Description |
 |---|---|---|
-| `peak_lat_g` | g | Peak lateral G-load for session |
-| `avg_brake_g` | g | Average braking G-force |
-| `neck_strain` | N Estimated cervical spine load |
-| `heart_rate_max` | bpm Peak heart rate |
+| `peak_lat_g` | g₀ | Maximum lateral g experienced |
+| `sustained_lat_g_avg` | g₀ | Average lateral g over longest corner |
+| `heart_rate_max` | bpm | Peak heart rate during race |
+| `g_loc_events` | count | Number of g-induced awareness moments (if recorded) |
 
 ## Sources
 
-- FIA timing & scoring data
-- Onboard camera telemetry (OEM-provided)
-- GPS data from Team GPS loggers
-- Driver biometric data (where available)
+- Team-issued telemetry (via official channels)
+- FIA timing data
+- Onboard camera g-logging systems
+- Wearable driver biometric sensors (where permitted)
 
 ## Licensing
 
-All data is used under FIA rights holder agreements. Redistribution prohibited without written consent.
+All telemetry data is subject to team and series regulations. Do not redistribute raw team telemetry without explicit permission. Processed/aggregated data may be published under **CC-BY-SA 4.0**.

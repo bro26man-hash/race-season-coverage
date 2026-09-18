@@ -2,40 +2,26 @@
 
 All visual and audio assets for race season coverage.
 
-## Structure
+## Subdirectories
 
-```
-multimedia/
-├── images/      ← Photography, diagrams, telemetry screenshots
-├── video/       ← Interview clips, onboard footage references
-└── graphics/    ← Data visualizations, G-load plots, circuit maps
-```
+| Path | Purpose |
+|---|---|
+| `images/` | Photography, technical diagrams, telemetry screenshots, cornering g-load plots |
+| `video/` | Interview clips, onboard footage references, highlight reels |
+| `graphics/` | Data visualizations, g-load plots overlaid on track maps, circuit diagrams, animated physics models |
+| `audio/` | Engine sound profiles, driver radio transcripts (annotated), ambient recordings |
 
 ## Asset Catalog
 
-### Images
-- Circuit aerials and corner diagrams
-- Telemetry screenshots (speed, braking points, G-load traces)
-- Driver portraits and pit lane action
-
-### Video
-- Onboard footage references (file names and timestamps)
-- Interview clips with drivers and engineers
-- Broadcast highlight reel extracts
-
-### Graphics
-- G-load plots per corner (lateral & longitudinal)
-- Speed delta charts vs. reference lap
-- Circuit maps with braking/acceleration zones
-
-## Naming Convention
-
-`[season]_[round]_[circuit]_[type]_[description].[ext]`
-
-Example: `2025_R06_Monaco_image_corner3_ng-force.png`
+Each asset should be tagged with:
+- **Event** (circuit name, round number)
+- **Type** (photo, video, graphic, audio)
+- **Author** (photographer, videographer, designer)
+- **License** (all rights reserved, editorial use, CC-BY)
+- **G-force data source** (if derived from telemetry)
 
 ## Usage Notes
 
-- Compress images to ≤ 2 MB for web use; keep originals in `images/raw/`.
-- Video refs are pointer files only — actual media stored in cloud CDN.
-- All graphics must include data source attribution.
+- Images and graphics should be **high-resolution** (minimum 300 dpi for print).
+- Video clips: prefer **1080p minimum**, 60fps for slow-motion analysis.
+- All g-load graphics should reference the technical notes in `articles/technical-notes/`.

@@ -1,25 +1,19 @@
 # Articles
 
-Written coverage for the race season.
+Written coverage for the race season, including race reports, technical breakdowns, driver profiles, and season summaries.
 
-## Structure
+## Subdirectories
 
-- **`technical-notes/`** — Deep-dive physics & engineering reference notes.
-  - `cornering-physics.md` — Lateral G-loads, centripetal acceleration, downforce, and driver demands.
+| Path | Purpose |
+|---|---|
+| `technical-notes/` | Deep-dive physics & engineering reference notes (cornering G-load analysis, aerodynamics, etc.) |
+| `race-reports/` | Event-by-event race coverage and highlights |
+| `driver-profiles/` | Season-long driver assessments and interviews |
+| `season-summaries/` | Mid-season and end-of-season composite analyses |
 
 ## Style Guide
 
-- Lead with the story; anchor with data.
-- Reference `technical-notes/` for physics context.
-- Use metric units (g, m/s², km/h) alongside imperial where relevant.
-- Cite telemetry or data sources from `data/` when making performance claims.
-
-## Article Types
-
-| Type | Location | Notes |
-|---|---|---|
-| Race Reports | `articles/` | Post-race analysis, key moments, standings |
-| Technical Breakdowns | `articles/` | Car design, strategy, engineering |
-| Driver Profiles | `articles/` | Career stats, physical preparation, interviews |
-| Season Summaries | `articles/` | Mid-season and end-of-season retrospectives |
-| Technical Notes | `articles/technical-notes/` | Reference material, physics derivations, data primers |
+- Lead with the human story; support with data.
+- Reference technical notes in `articles/technical-notes/` for physics context.
+- Use metric units (km/h, seconds, g) as primary; include imperial equivalents in parentheses for broad audiences.
+- Cite telemetry sources in `data/` inline with links.

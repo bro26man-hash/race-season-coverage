@@ -21,6 +21,15 @@ Raw and processed datasets for race season analysis.
 
 ## Sources & Licensing
 
-- **Official timing data**: FIA / series organizerprovided
+- **Official timing data**: FIA / series organizer provided
 - **Telemetry**: Team-authorized, credited per dataset
-- **Wikipedia reference**: For physics constants and background, see `articles/technical-notes/cornering-physics.md`
+- **Wikipedia reference (G-force)**: For physics constants and background, see `../articles/technical-notes/cornering-physics.md`
+  - Key constants: 1 g = 9.80665 m/s²; ~35 km/h per second velocity change
+  - Human tolerance: 5 g₀ untrained threshold; 9 g₀ trained sustained; 214 g₀ record (Bräck, 2003)
+  - Cornering physics: a = v²/r; F_friction = μ × N; Downforce ∝ v²
+
+## Connection to Articles
+
+- `../articles/technical-notes/cornering-physics.md` — Full G-force reference covering lateral loads, centripetal acceleration, downforce, and driver demands
+- `../articles/technical-breakdowns/` — Use telemetry traces for strategy analysis
+- `../multimedia/graphics/` — Visualize data from this folder as charts & maps

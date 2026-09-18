@@ -1,18 +1,18 @@
 # Cornering Physics — Technical Reference Notes
 
-> **Source material:** Wikipedia articles on *G-force*, *Centripetal force*, and *Downforce*  
-> **Standard gravity:** g₀ = 9.80665 m/s²  
+> **Source:** Wikipedia, "G-force" — key facts extracted for race-season cornering analysis  
+> **Reference gravity:** g₀ = 9.80665 m/s² (standard gravity at Earth's surface)  
 > **Purpose:** Ready-reference facts for race-season cornering analysis writing
 
 ---
 
 ## 1. G-Force Fundamentals
 
-- **G-force** (gravitational force equivalent) is a mass-specific force — force per unit mass — expressed in units of standard gravity (g or g₀). It is technically an *acceleration*, not a force.
+- **G-force** (gravitational force equivalent) is a **mass-specific force** — force per unit mass — expressed in units of standard gravity (g or g₀). It is technically an *acceleration*, not a force.
 - **1 g** = the force per unit mass due to gravity at Earth's surface = **9.80665 m/s²** (≈ 35.3 km/h per second of velocity change).
 - G-force is produced only by **mechanical surface-contact forces** (pushes and pulls); an object in free fall experiences 0 g.
 - **Direction convention:** Positive g points downward (upward acceleration), producing compressive stress; negative g points upward (downward acceleration), producing tensile stress.
-- **Weight = mass × −g-force** — the actual measured reaction force is opposite in direction to the g-force vector. This sign convention matters when resolving forces in动态 scenarios like cresting a hill or diving into a corner.
+- **Weight = mass × −g-force** — the actual measured reaction force is opposite in direction to the g-force vector. This sign convention matters when resolving forces in dynamic scenarios like cresting a hill or diving into a corner.
 - **Key quote from Wikipedia (G-force article):** *"Whenever the vehicle changes either direction or speed, the occupants feel lateral (side to side) or longitudinal (forward and backwards) forces produced by the mechanical push of their seats."*
 - **For a given g-force, the mechanical stresses are identical regardless of whether the g-force is caused by gravity, mechanical resistance, or coordinate acceleration.** This is why a driver in a hard cornering maneuver feels the same seat-of-the-pants force as someone standing in a centrifuge — the physics is interchangeable.
 
@@ -81,7 +81,7 @@ When a car changes direction, occupants feel **lateral (side-to-side) forces** p
 ### How Downforce Multiplies Cornering G-Loads
 - Aerodynamic downforce adds to the vehicle's static weight. A car generating 3× its own weight in downforce at high speed effectively has **four times** the normal tyre load.
 - Since friction is proportional to vertical load, **doubling the downforce approximately doubles the maximum lateral G-load** the tyres can sustain (up to the tyre's structural limits).
-- This is the fundamental reason modern F1 cars can sustain **4–6 g** lateral loads through high-speed corners: the downforce at racing speeds effectively multiplies thetyre grip far beyond what mechanical grip alone could provide.
+- This is the fundamental reason modern F1 cars can sustain **4–6 g** lateral loads through high-speed corners: the downforce at racing speeds effectively multiplies the tyre grip far beyond what mechanical grip alone could provide.
 
 ### Front vs. Rear Wings
 - **Front wings:** Create front-axle grip and condition/optimize airflow for the rest of the car. Continually adjusted for each circuit's characteristics.
@@ -112,8 +112,8 @@ When a car changes direction, occupants feel **lateral (side-to-side) forces** p
   | Duration | Maximum tolerable G-load |
   |---|---|
   | < 10 seconds | ~20 g₀ |
-  | ~1 minute | ~10 g₀ |
-  | ~10 minutes | ~6 g₀ |
+  | ~ 1 minute | ~10 g₀ |
+  | ~ 10 minutes | ~6 g₀ |
 
   These forces were endured with cognitive facilities intact — subjects could perform simple physical and communication tasks.
 - **Record holder John Stapp** (1954 rocket-sled experiment): survived **46.2 g** peak ("eyeballs-out") and **25+ g for 1.1 seconds** — lived to age 89 with no ill effects. Proved that the human body can withstand extraordinary brief lateral accelerations.

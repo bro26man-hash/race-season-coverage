@@ -1,16 +1,14 @@
 # Articles
 
-Technical analysis, race previews, race reviews, and in-depth features for the 2025–2026 race season.
+Written coverage for the race season — race reports, technical breakdowns, driver profiles, and season summaries.
 
-## Structure
+## Subdirectories
 
-- `technical-notes/` — Physics, engineering, and biomechanics deep-dives (e.g., cornering, tire dynamics, g-force analysis)
-- `race-previews/` — Pre-race analysis, circuit guides, driver profiles
-- `race-reviews/` — Post-race debriefs, performance breakdowns
-- `features/` — Long-form storytelling, historical retrospectives
+- **technical-notes/** — Deep-dive physics & engineering reference notes (e.g. cornering G-load analysis, aerodynamic principles, driver g-tolerance)
 
-## Guidelines
+## Style Guide
 
-- All technical notes should cite primary sources and include simplified explanations for a general audience.
-- Use consistent heading structure: `# Title`, `## Section`, `### Subsection`.
-- Tag articles with relevant keywords (e.g., `cornering`, `g-force`, `downforce`, `biomechanics`).
+- Lead with the story; tech notes support the narrative
+- Reference `technical-notes/` for raw physics data
+- Link to `data/` for telemetry and sector splits
+- Cite multimedia assets from `multimedia/`

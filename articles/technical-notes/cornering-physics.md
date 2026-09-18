@@ -1,96 +1,84 @@
-# Cornering Physics: Technical Reference for Race Season Coverage
+# Cornering Physics — Technical Reference Notes
 
-> Source: Wikipedia — "G-force" and "Centripetal acceleration" (extracted 2026)
+> Source: Wikipedia — [G-force](https://en.wikipedia.org/wiki/G-force)
+>
+> These notes provide the physics foundations for cornering analysis in race season coverage. Reference them when writing about lateral G-loads, centripetal acceleration, downforce, and driver physical demands.
 
 ---
 
 ## 1. G-Force Fundamentals
 
-- **Definition:** G-force (gravitational force equivalent) is a **mass-specific force** — force per unit mass — expressed in units of standard gravity (symbol **g** or **g₀**). It is *not* to be confused with "g" for grams.
-- **Standard gravity:** 1 g = **9.80665 m/s²** (≈ 9.80665 N/kg). This value does not vary with location; on the Moon it is ~1/6 g.
-- **Key clarification:** The term "g-force" is technically a measure of **acceleration**, not force. However, when multiplied by mass (F = ma), it produces a mechanical force that generates compressive and tensile stress in structures — including the human body.
-- **G-force is produced exclusively by mechanical contact forces** (pushes and pulls from surfaces). Gravitation alone does *not* produce g-force — an object in free fall feels 0 g (weightlessness).
-- The expression "1 g = 9.80665 m/s²" means velocity changes ~35 km/h (22 mph) per second. So a car braking at 1 g can stop from 35 km/h in 1 second.
-
----
+- **Definition:** G-force (gravitational force equivalent) is a **mass-specific force** (force per unit mass), expressed in units of standard gravity (symbol *g* or *g₀*). One *g* equals the standard gravitational acceleration on Earth's surface: **9.80665 m/s²**.
+- **Not just gravity:** G-force is produced by **mechanical contact forces** — the push of a seat, the grip of tires on asphalt, the downforce of wings. Objects in free fall experience **0 g** (weightlessness).
+- **Vectors matter:** G-force is a vector. Positive g pushes the driver into the seat (downward); negative g pulls them upward (e.g., cresting a hill or pulling out of a dive). **Lateral g** acts side-to-side through corners.
+- **Newton's second law in play:** *F = ma*. The force the driver feels is proportional to both the car's acceleration and the driver's mass. A 75 kg driver at 4 g lateral experiences a **~2,940 N lateral force** — equivalent to hoisting a 300 kg weight sideways.
 
 ## 2. Lateral G-Loads Through Corners
 
-- When a vehicle **changes direction**, occupants experience **lateral (side-to-side) forces** produced by the mechanical push of seats or grip from the driving surface. This is the direct physical basis of cornering G-loads.
-- Lateral G-load is the **radial (centripetal) acceleration** component that changes the *direction* of the velocity vector during cornering, distinct from tangential acceleration (which changes speed).
-- The magnitude of lateral G-load in a corner is governed by the centripetal acceleration: **a_c = v² / r**, where *v* is speed and *r* is the corner radius. **Doubling speed quadruples the G-load**; tightening the radius (smaller r) increases it proportionally.
-- **Reference points from the article:**
-  - A dragster accelerating in a straight line can produce a horizontal G-force of **~5.3 g**.
-  - A typical IndyCar on a high-speed oval generates **3–4 g** of lateral load through corners; F1 cars can reach **4–6 g** in slow, tight corners.
-  - The highest *survived* G-force on record was **214 g₀** (Kenny Bräck, 2003 IndyCar Series finale at Texas Motor Speedway — catch fence impact).
-- Total G-load is the vector sum: **g_total = √(g_lateral² + g_longitudinal²)** — braking while turning compounds the load beyond either component alone.
+- **What they are:** Lateral g-forces are the **side-to-side accelerations** a car (and driver) experiences when changing direction through a corner. They are the horizontal component of the total g-vector.
+- **How they arise:** Any vehicle change in direction produces lateral forces via **mechanical push** — tire friction, aerodynamic downforce, and road surface reaction. The driver feels these as a sideways lean, resisted by the seat, harness, and their own body tension.
+- **Magnitude in racing:** A typical high-performance corner may subject the car and driver to **2–4 g** of lateral acceleration. In extreme cases (e.g., high-speed sweepers like Copse at Silverstone or 130R at Suzuka), lateral g can spike above **5 g**.
+- **Combined loading:** Real corners mix lateral, longitudinal (braking/acceleration), and vertical g. The total g-vector is the magnitude of all three components. A driver braking at 1.3 g while carrying 3.5 g lateral is experiencing a combined load of approximately **3.7 g**.
 
----
+## 3. Centripetal Acceleration
 
-## 3. Centripetal Acceleration & Cornering Mechanics
-
-- **Centripetal acceleration** is the component of acceleration directed toward the center of curvature of a path — it changes the *direction* of velocity without changing its magnitude (in uniform circular motion).
-- **Formula:** a_c = v² / r (or equivalently, a_c = ω²r, where ω is angular velocity).
-- In racing, the driver must constantly modulate speed and line to manage centripetal acceleration through corners. A tighter apex (smaller r) demands less speed to maintain the same G-load.
-- **Tangential vs. radial:** The total G-vector felt by the driver is the *vector sum* of tangential acceleration (braking/acceleration along the path) and radial/centripetal acceleration (lateral, perpendicular to the path).
-- **Newton's Second Law (F = ma):** The net force on the driver and car during cornering equals mass × centripetal acceleration. This force is transmitted through the tires (as grip/friction) and through the seat (as a lateral push on the driver's body).
-
----
+- **The physics:** Circular motion requires a **centripetal acceleration** directed toward the center of the curve: *a_c = v² / r*, where *v* is speed and *r* is the corner radius. This is the acceleration the driver and car must sustain.
+- **Speed is squared:** Doubling entry speed **quadruples** the centripetal acceleration required. This is why braking before the apex is critical — carrying too much speed into a corner demands impossible tire grip.
+- **Radius matters:** Tight hairpins (small *r*) demand enormous centripetal acceleration even at modest speed. Fast sweepers (large *r*) allow higher speeds with the same g-load.
+- **G-force connection:** The lateral g a driver feels IS the centripetal acceleration expressed in g-units. A 150 km/h (41.7 m/s) corner with a 100 m radius produces *a_c = v²/r = 17.4 m/s² ≈ 1.77 g* lateral.
 
 ## 4. The Role of Downforce
 
-- **Downforce** is an aerodynamic downward force generated by the car's wings, diffuser, and underbody. It effectively *increases* the normal force pressing the tires onto the track surface.
-- Higher normal force → **higher maximum grip** (friction force ∝ normal force) → the car can sustain **higher cornering speeds** before tires break traction, or equivalently, higher lateral G-loads at a given speed.
-- Downforce allows race cars to corner at impossible speeds for a purely mechanical-grip vehicle — F1 cars, for example, can produce downforces exceeding **5 g** at high speed, meaning the total vertical force on the car is more than six times its own weight.
-- Downforce is **speed-dependent**: it increases with the square of velocity (*F_downforce ∝ v²*), just like aerodynamic drag.
-- **Trade-off:** Downforce creates **aerodynamic drag**, which penalizes straight-line speed. Teams balance high-downforce (slow, twisty circuits) vs. low-downforce (fast, high-speed circuits) setups accordingly.
-- The **center of aerodynamic pressure** shifts with ride height and angle of attack, affecting car balance (understeer/oversteer characteristics) through corners.
-- From a driver's perspective, increased downforce means the lateral G-loads through corners are *demanding* — the body must resist greater side-to-side forces, and the neck/core muscles work harder to keep the head stable for vision and control inputs.
-
----
+- **What it does:** Downforce is the **aerodynamic load** pushing the car into the track. It increases the total vertical force on the tires, which in turn increases the **maximum lateral friction force** available for cornering.
+- **Direct g-impact:** More downforce = more grip = higher achievable lateral g before the tires saturate. A downforce level equivalent to **3x the car's static weight** at high speed means the tires can generate up to **~3× the cornering g** compared to a low-downforce setup.
+- **Trade-off — drag vs. downforce:** Wings and aerodynamic devices that generate downforce also create **drag** (resisting forward motion). Circuits with heavy braking zones (e.g., Monaco) favor lower downforce settings; high-speed circuits with fast corners (e.g., Spa, Monza) favor maximum downforce.
+- **Ground effect:** Venturi tunnels under the car generate low pressure beneath the floor, sucking the car toward the track. This is especially efficient because it adds downforce **without proportionally increasing drag**, allowing higher cornering g with less speed loss on straights.
+- **Driver feel:** Downforce builds with speed, so the car feels progressively more "stuck" as velocity increases. The driver must adapt throttle application and steering input as aero loads change through a corner — especially on partial-throttle corners where downforce is still building.
 
 ## 5. Physical Demands on Drivers
 
-### Human G-Tolerance
-- The human body tolerates G-forces that are **perpendicular to the spine** far better than those aligned with the spine. Lateral cornering loads (side-to-side, perpendicular to the spine) are within the more tolerant range — but sustained lateral loading still causes significant fatigue.
-- **Untrained humans** can tolerate approximately:
-  - **20 g** for less than 10 seconds (eyeballs-in direction)
-  - **10 g** for 1 minute
-  - **6 g** for 10 minutes
-- **Trained individuals** (athletes, pilots, race drivers) can sustain higher loads for longer through strain maneuvers and conditioning. G-tolerance is **trainable** but varies individually. Cardiovascular health significantly affects tolerance — poor conditioning reduces lateral G endurance.
-- **Negative g-forces** (driving blood to the head) are far more dangerous, with a tolerance limit of only **−2 to −3 g₀**. This can cause "red out" (vision reddened) and potential brain/eye vessel damage.
+### G-Tolerance and Orientation
 
-### Fatigue & Concentration
-- During a race, drivers experience repeated cycles of lateral G-load loading (every corner). Over a full race distance (e.g., 1h30m for F1), the cumulative muscular effort to resist lateral forces — especially in the neck and core — is enormous.
-- Heat, dehydration, and G-suit compression compound the physical toll. Drivers can lose **several kilograms** of body weight during a race through sweat alone.
-- **G-LOC (G-induced Loss of Consciousness)** — while more common in aviation — is a risk in racing during extreme lateral events (e.g., off-camber corners under heavy braking with combined loading).
+- **Horizontal (lateral) g is best-tolerated:** The human body survives lateral acceleration far better than vertical. Untrained humans can withstand **~20 g for <10 seconds** or **~10 g for 1 minute** in the "eyeballs in" direction (chest-to-back, typical of lateral cornering loads).
+- **Vertical g is the limit:** Sustained positive vertical g (>~5 g for a typical person) drives blood toward the feet, causing **grey-out → tunnel vision → blackout → g-LOC**. F1 drivers experience vertical g on curb strikes and major bumps, but sustained high vertical g is rare in cornering.
+- **Negative g is dangerous:** Downward acceleration (e.g., unloading off a curb or bouncing) can push blood to the head, causing **red-out** and potential retinal damage. Limits are roughly **−2 to −3 g**.
 
-### Anatomy of a Corner
-1. **Entry:** Braking produces longitudinal deceleration (negative G). Driver shifts weight forward, loads front tires.
-2. **Turn-in:** Lateral G-load builds as centripetal acceleration increases. Driver applies power marginally to maintain balance.
-3. **Apex:** Peak lateral G-load. Speed is lowest; tires are at grip limit.
-4. **Exit:** Throttle application converts some lateral G into tangential acceleration as the car straightens. Driver shifts weight rearward.
+### Circulatory and Vision Effects
 
----
+- **Grey-out:** Loss of color vision — early warning sign of incipient g-LOC.
+- **Tunnel vision:** Peripheral vision closes in as blood drains from the retina.
+- **Blackout:** Complete vision loss while consciousness is maintained.
+- **G-LOC:** Loss of consciousness — functionally catastrophic for a driver at 300+ km/h.
+- **Red-out:** Vision reddens due to blood engorgement in retinal vessels under negative g.
 
-## 6. Quick Reference Conversions
+### Musculoskeletal Load
 
-| Scenario | Approximate G-Load |
-|---|---|
-| Standing on Earth | 1 g (9.8 m/s²) |
-| Strong braking (road car) | ~1 g |
-| Dragster launch | ~5.3 g (horizontal) |
-| IndyCar high-speed oval corner | 3–4 g lateral |
-| High-speed F1 corner | 4–6 g lateral |
-| Peak IndyCar crash (Bräck 2003) | 214 g (impact) |
-| F1 downforce at max speed | >5 g (vertical, aerodynamic) |
+- **Neck strain:** The driver's head (~5 kg) at 4 g lateral becomes an effective **20 kg lateral load** on the neck vertebrae and muscles. Core and neck conditioning is essential for a full season.
+- **Upper body:** The driver must resist the lateral force through the seat, harness, and their own forearm/shoulder strength on the wheel. Sustained cornering at 3–4 g is essentially **holding a heavy lateral plank** for the duration of the corner.
+- **Legs and feet:** Brake pedal operation at high g requires significant leg strength, especially with carbon-carbon brakes that demand **130–150 kg of pedal force** at max.
+
+### Record-Breaking Human Tolerance
+
+- **John Stapp (1954):** Survived **46.2 g eyeballs-out** deceleration (rocket sled) and **25+ g for 1.1 seconds** — proving the human body's remarkable short-duration tolerance.
+- **Kenny Bräck (2003 IndyCar, Texas):** Survived a peak **214 g** impact after wheel-to-wheel contact and catch fence strike — the highest recorded g-force experienced by a surviving human.
 
 ---
 
-## Key Takeaway for Writers
+## Quick Reference — Cornering G-Load Equation
 
-> When describing a cornering moment, the lateral G-load is the centripetal acceleration acting on the car-driver system, proportional to the *square* of speed and inversely proportional to corner radius. Downforce multiplies the available grip, enabling the extreme cornering speeds fans see — but every additional G is a physical battle the driver's body must win.
+**Total g = √(lateral² + longitudinal² + vertical²)**
+
+| Component | Typical F1 Range | Notes |
+|---|---|---|
+| Lateral | 2–5 g | Cornering force; depends on speed² / radius |
+| Longitudinal (braking) | 1–2 g | Deceleration under braking |
+| Longitudinal (acceleration) | 1.5–3 g | Traction out of corner |
+| Vertical | 1–2+ g | Curb strikes, bumps, aero downforce |
+
+**Centripetal acceleration:** *a_c = v² / r*  (lateral g = a_c / 9.80665)
+**Maximum cornering speed:** *v_max = √(μ × g × r)*  (μ = tire friction coefficient)
+**Downforce-enhanced grip:** Effective μ increases with downforce → higher v_max for the same radius
 
 ---
 
-*Sources: Wikipedia, "G-force" (https://en.wikipedia.org/wiki/G-force); Wikipedia, "Centripetal acceleration" (https://en.wikipedia.org/wiki/Centripetal_acceleration); FIA technical regulations; motorsport engineering literature.*
+*These notes are a starting reference. Supplement with telemetry data from `data/telemetry/` and circuit-specific analysis for each article.*

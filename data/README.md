@@ -1,17 +1,17 @@
 # Data
 
-Structured datasets to power your race-season analysis.
+Raw and processed datasets supporting race season analysis.
 
-## Suggested Sub-Folders
+## Subdirectories
 
-- `data/lap-sheets/` — Per-lap timing, sector splits, gaps
-- `data/results/` — Race and qualifying results, points tables
-- `data/circuits/` — Corner maps, elevation profiles, track specs
-- `data/historical/` — Year-over-year comparisons, record laps
+- **telemetry/** — GPS traces, acceleration (longitudinal & lateral), braking points, throttle/brake traces
+- **race-results/** — Official classifications, sector times, gap charts
+- **driver-metrics/** — Physical & performance data (heart rate, neck strength, G-load exposure, reaction times)
 
-### File Formats
+## Data Dictionary
 
-- CSV for tabular timing data
-- JSON for structured metadata
-- GeoJSON for circuit maps
-- Keep source attribution in a README.md inside each race folder.
+See individual subfolder READMEs for schema definitions, units, and source links.
+
+## Licensing
+
+All telemetry data used under fair-use / editorial license. Verify rights before redistribution.

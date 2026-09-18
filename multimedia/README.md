@@ -1,12 +1,18 @@
 # Multimedia
 
-On-track photos, onboard video clips, telemetry visualizations, and broadcast highlights.
+All visual and audio assets for race season coverage.
 
-## Suggested Sub-Folders
+## Subdirectories
 
-- `multimedia/photos/` — Pit lane, podium, paddock action
-- `multimedia/video/` — Onboard footage, replay clips, features
-- `multimedia/telemetry/` — GPS tracks, acceleration plots, speed charts
-- `multimedia/audio/` — Driver radio, commentary, ambient track audio
+- **images/** — Photography, technical diagrams, telemetry screenshots, cornering G-load plots
+- **video/** — Interview clips, onboard footage references, replay analysis
+- **graphics/** — Data visualizations, circuit maps, driver performance dashboards
 
-Organize by race/event name for easy cross-referencing from your articles.
+## Asset Metadata
+
+Each asset should include:
+- Source and copyright info
+- Date captured
+- Relevant session (FP1/2/3, qualifying, race)
+- Driver/car reference
+- Key geometric or data reference (e.g. corner name, sector)

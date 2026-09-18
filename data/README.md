@@ -1,43 +1,48 @@
 # Data
 
-This folder stores raw and processed datasets supporting technical analysis.
+This folder contains raw and processed datasets for race season coverage.
 
 ## Structure
 
 ```
 data/
-├── README.md                  ← Data dictionary & sources
-├── telemetry/
-│   ├── gps-tracks/            ← GPS position logs (circuit tracing)
-│   ├── acceleration/          ← 3-axis accelerometer data (x, y, z)
-│   ├── braking/               ← Brake pressure, deceleration rates
-│   └── throttle/              ← Throttle application maps
-├── race-results/
-│   ├── sector-times/          ← Sector splits per driver per session
-│   ├── official-results/      ← FIA/series official classification
-│   └── lap-charts/            ← Position-by-lap data
-└── driver-metrics/
-    ├── physical-fitness/      ← Neck strength, G-tolerance test results
-    ├── reaction-time/         ← Cognitive response measurements
-    └── biometrics/            ← Heart rate, core temperature (where available)
+├── README.md              ← This file (data dictionary & sources)
+├── telemetry/             ← GPS, acceleration, braking data
+├── race-results/          ← Official results, sector times
+└── driver-metrics/        ← Physical & performance data
 ```
 
 ## Data Dictionary
 
+### Telemetry
 | Field | Unit | Description |
 |---|---|---|
-| `lateral_g` | g | Side-to-side acceleration; positive = right, negative = left |
-| `longitudinal_g` | g | Fore-aft acceleration; positive = braking, negative = acceleration |
-| `vertical_g` | g | Up-down acceleration; always ~1 g at rest |
-| `speed_kmh` | km/h | Instantaneous speed |
-| `throttle_pct` | % | Throttle position (0–100) |
-| `brake_pct` | % | Brake pedal pressure (0–100) |
-| `lat_g_peak` | g | Maximum lateral g recorded for the lap |
-| `sector_time` | s.mmm | Sector split time (minutes.seconds milliseconds) |
+| `lateral_g` | g | Lateral acceleration through corners |
+| `longitudinal_g` | g | Braking/acceleration along the track axis |
+| `speed` | km/h | Vehicle speed at sample point |
+| `throttle_pos` | % | Throttle position |
+| `brake_pressure` | bar | Brake apply pressure |
+
+### Race Results
+| Field | Unit | Description |
+|---|---|---|
+| `position` | — | Finishing position |
+| `gap_winner` | s | Time gap to race winner |
+| `sector_1_2_3` | s | Individual sector times |
+
+### Driver Metrics
+| Field | Unit | Description |
+|---|---|---|
+| `peak_lateral_g` | g | Highest lateral G-load recorded |
+| `avg_lateral_g` | g | Average lateral G-load for the stint |
+| `neck_strain` | N | Estimated neck muscle force (where available) |
 
 ## Sources
 
-- **Telemetry:** Provided by teams under embargoes; timing data from FIA stewards.
-- **Public datasets:**可在F1官网, IndyCar data portal, and official series websites找到.
-- **Research references:** NASA g-tolerance studies, military aviation human-factors literature.
-- **Ethical use:** Driver biometrics are sensitive — handle in accordance with team privacy policies and GDPR where applicable.
+- Official FIA timing data
+- Team telemetry (with permission)
+- Wikipedia G-force article for physics constants
+
+## Licensing
+
+All datasets in this folder are for editorial use within the race season coverage project. Proper citation is required for any external data.

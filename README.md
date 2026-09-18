@@ -10,19 +10,19 @@ This repository supports full-season race coverage with an emphasis on **corneri
 
 ```
 race-season-coverage/
-├── README.md                  ← This file
+├── README.md                  ← This file (project overview)
 ├── articles/                  ← Written coverage
 │   ├── README.md              ← Article index and style guide
 │   └── technical-notes/       ← Deep-dive technical references
 │       └── cornering-physics.md
 ├── multimedia/                ← Images, video, audio, graphics
 │   ├── README.md              ← Asset catalog and usage notes
-│   ├── images/\               ← Photography, diagrams, telemetry screenshots
-│   ├── video/\                ← Interview clips, onboard footage references
-│   └── graphics/\             ← Data visualizations, G-load plots, circuit maps
+│   ├── images/                ← Photography, diagrams, telemetry screenshots
+│   ├── video/                 ← Interview clips, onboard footage references
+│   └── graphics/              ← Data visualizations, G-load plots, circuit maps
 └── data/                      ← Raw & processed datasets
     ├── README.md              ← Data dictionary, sources, licensing
-    ├── telemetry/\            ← GPS, acceleration, braking data
+    ├── telemetry/             ← GPS, acceleration, braking data
     ├── race-results/          ← Official results, sector times
     └── driver-metrics/        ← Physical & performance data
 ```

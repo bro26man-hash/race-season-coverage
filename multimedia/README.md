@@ -4,24 +4,20 @@ All visual and audio assets for race season coverage.
 
 ## Subdirectories
 
-| Path | Purpose |
-|---|---|
-| `images/` | Photography, diagrams, telemetry screenshots, onboard stills |
-| `video/` | Interview clips, onboard footage references, highlight reels |
-| `graphics/` | Data visualizations, G-load plots, circuit maps, speed traces |
+- **`images/`** — Photography, diagrams, telemetry screenshots
+- **`video/`** — Interview clips, onboard footage references
+- **`graphics/`** — Data visualizations, G-load plots, circuit maps
 
-## Asset Metadata
+## Asset Catalog Template
 
-Each asset should include:
-- **Source** (onboard camera, official broadcast, telemetry overlay)
-- **Session** (FP1/2/3, qualifying, race)
-- **Car/Driver** identifier
-- **Date** and circuit name
-- **License / usage rights**
+| Filename | Type | Description | Source | License |
+|---|---|---|---|---|
+| `images/corner-apex-diagram.png` | Diagram | Apex trajectory through a典型 corner | Own work | CC-BY |
+| `graphics/lateral-g-plot-f1-2025.png` | Data viz | Lateral g-load over a lap | Telemetry | Team-authorized |
 
-## G-Load Visualization Tips
+## Guidelines
 
-- Plot lateral G-loads as a function of corner position (distance along track)
-- Overlay tire temperature data where available
-- Use colour-coded traces: green = within limits, yellow = approaching limits, red = at/over limits
-- Annotate key corners with sector times and speed entry/exit data
+- Prefer **high-resolution** originals; compress for web delivery
+- Label all images with **circuit name, corner number, and direction of travel**
+- G-load plots should include **time, g-axis, and speed overlay** when possible
+- Video clips: note **camera angle, car number, and session type** (FP1/FP2/Quali/Race)

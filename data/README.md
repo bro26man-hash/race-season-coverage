@@ -1,37 +1,26 @@
 # Data
 
-Raw and processed datasets for race season coverage.
+Raw and processed datasets for race season analysis.
 
 ## Subdirectories
 
-| Path | Purpose |
-|---|---|
-| `telemetry/` | GPS traces, acceleration (longitudinal & lateral), braking and throttle traces |
-| `race-results/` | Official classifications, sector times, gap charts |
-| `driver-metrics/` | Physical & performance data — heart rate, neck strain estimates, reaction times |
+- **`telemetry/`** — GPS traces, acceleration (longitudinal & lateral g), braking and throttle traces
+- **`race-results/`** — Official results, sector times, pit stop data
+- **`driver-metrics/`** — Physical & performance data (heart rate, neck strain estimates, reaction times)
 
 ## Data Dictionary
 
-### Telemetry Files
-
-| Column | Unit | Description |
+| Field | Unit | Description |
 |---|---|---|
-| `timestamp` | ms | Lap-clock relative time |
-| `speed` | km/h | Vehicle speed |
-| `lat_accel` | g | Lateral acceleration (cornering G-load) |
-| `lon_accel` | g | Longitudinal acceleration (braking/throttle) |
-| ` throttle_pos` | % | Throttle opening |
+| `lateral_g` | g₀ | Peak/corner lateral acceleration |
+| `longitudinal_g` | g₀ | Braking/acceleration along the track axis |
+| `speed` | km/h | Vehicle speed at telemetry sample point |
+| `throttle_pos` | % | Throttle opening percentage |
 | `brake_pressure` | bar | Brake pedal pressure |
-| `steering_angle` | degrees | Front wheel angle |
-
-### Key Formulas
-
-- **Centripetal acceleration:** a = v² / r (where v = speed, r = corner radius)
-- **Braking G-force:** a = v² / (2 × s) (constant deceleration over distance s)
-- **Total G-load:** √(lat² + lon² + 1²) — vector sum including gravity
+| `steering_angle` | degrees | Steering wheel angle |
 
 ## Sources & Licensing
 
-- Telemetry: Official FIA/F1 broadcasts, team data (subject to NDA)
-- Race results: Official timing provider publications
-- Driver metrics: Published interviews, physiological studies, team communications
+- **Official timing data**: FIA / series organizerprovided
+- **Telemetry**: Team-authorized, credited per dataset
+- **Wikipedia reference**: For physics constants and background, see `articles/technical-notes/cornering-physics.md`

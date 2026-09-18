@@ -1,20 +1,20 @@
 # Articles
 
-Written race season coverage — reports, technical breakdowns, driver profiles, and season summaries.
+Written coverage for the race season — race reports, technical breakdowns, driver profiles, and season summaries.
 
 ## Subdirectories
 
-| Path | Purpose |
+- **`technical-notes/`** — Deep-dive physics & engineering reference notes (e.g. cornering G-load analysis, aerodynamics, tire behavior)
+
+## Style Guide
+
+- Lead with the story; use technical notes as supporting context
+- Cite data sources (telemetry, official timing, Wikipedia references)
+- Keep paragraphs tight; aim for 200–400 words per article
+- Use dimensionless units (g, g₀) when discussing accelerations
+
+## Index
+
+| File | Topic |
 |---|---|
-| `technical-notes/` | Deep-dive physics & engineering reference notes for use in articles |
-
-## Style Notes
-
-- Lead with the story; use technical notes as supporting sidebar material
-- Reference G-load and centripetal acceleration data with units (g, m/s²)
-- Cite telemetry sources from `data/telemetry/` where applicable
-- Keep prose accessible — target readers are motorsport fans, not PhD physicists
-
-## File Naming Convention
-
-`slug-topic-date.md` — e.g. `monaco-cornering-analysis-2025.md`
+| `technical-notes/cornering-physics.md` | Lateral G-loads, centripetal acceleration, downforce, driver demands |

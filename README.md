@@ -1,47 +1,55 @@
 # Race Season Coverage
 
-Comprehensive race season coverage with technical analysis, multimedia assets, and data resources for professional motorsport journalism.
+Comprehensive motorsport coverage project focusing on technical depth, driver analysis, and data-driven storytelling.
 
-## 📁 Folder Structure
+## Overview
+
+This repository supports full-season race coverage with an emphasis on **cornering physics**, **driver physical demands**, and **technical analysis** that brings depth to every article.
+
+## Folder Structure
 
 ```
 race-season-coverage/
-├── README.md                  # This file
-├── articles/                  # Written coverage & technical notes
-│   ├── technical-notes/       # Deep-dive physics & engineering references
-│   ├── race-reports/          # Round-by-round race reports
-│   └── driver-profiles/       # Driver & team technical profiles
-├── multimedia/                # Visual & audio assets
-│   ├── photos/                # Race photography & diagrams
-│   ├── video/                 # Highlight clips & analysis videos
-│   └── audio/                 # Podcasts & commentary recordings
-├── data/                      # Raw & processed datasets
-│   ├── telemetry/             # Lap-time & sector telemetry
-│   ├── sensors/               # G-force, throttle, brake sensor logs
-│   └── stats/                 # Season aggregates & comparisons
+├── README.md                  ← This file
+├── articles/                  ← Written coverage
+│   ├── README.md              ← Article index and style guide
+│   └── technical-notes/       ← Deep-dive technical references
+│       └── cornering-physics.md
+├── multimedia/                ← Images, video, audio, graphics
+│   ├── README.md              ← Asset catalog and usage notes
+│   ├── images/\               ← Photography, diagrams, telemetry screenshots
+│   ├── video/\                ← Interview clips, onboard footage references
+│   └── graphics/\             ← Data visualizations, G-load plots, circuit maps
+└── data/                      ← Raw & processed datasets
+    ├── README.md              ← Data dictionary, sources, licensing
+    ├── telemetry/\            ← GPS, acceleration, braking data
+    ├── race-results/          ← Official results, sector times
+    └── driver-metrics/        ← Physical & performance data
 ```
 
-## 🏎️ Purpose
+## What's Inside
 
-This repository supports in-depth motorsport coverage with a focus on **technical cornering analysis**. It serves as a structured archive for:
+| Folder | Purpose |
+|---|---|
+| `articles/` | Race reports, technical breakdowns, driver profiles, season summaries |
+| `articles/technical-notes/` | Physics & engineering reference notes (e.g. cornering G-load analysis) |
+| `multimedia/` | All visual & audio assets with catalog metadata |
+| `data/` | Telemetry, results, and driver performance datasets |
 
-- **Articles** — Long-form writing, technical explainers, and race reports
-- **Multimedia** — Photos, videos, and audio content tied to each round
-- **Data** — Telemetry, sensor logs, and statistical analyses
+## Key Technical Focus
 
-## 🔬 Technical Focus
+- **Cornering Physics** — lateral G-loads, centripetal acceleration, downforce aerodynamics
+- **Driver Demands** — G-tolerance, blood circulation effects, neck & core strain, vision impacts
+- **Data Integration** — telemetry-to-narrative pipelines, sector-by-sector analysis
 
-Cornering physics is a central theme. Key areas of investigation include:
+## Getting Started
 
-- **Lateral G-loads** — The side-to-side forces experienced through corners and how they vary by circuit, speed, and car setup
-- **Centripetal Acceleration** — The inward force required to keep the car on its curved path, and how drivers manage it
-- **Downforce & Aerodynamics** — How aerodynamic downforce increases cornering grip and allows higher-latitude G-loading
-- **Driver Physical Demands** — The biomechanical toll of sustained high-G cornering on neck, core, and upper-body muscles
+1. Clone the repo
+2. Review `articles/technical-notes/cornering-physics.md` for the G-force reference
+3. Check `data/` for available datasets
+4. Start writing in `articles/`
 
-## 📝 Writing Notes
+## Sources
 
-Technical reference files live in `articles/technical-notes/`. Each file is self-contained and cites its sources so writers can quickly pull verified facts into their pieces.
-
-## 🤝 Contributing
-
-Add new articles under `articles/`, multimedia under `multimedia/`, and datasets under `data/`. Keep file names descriptive and use kebab-case.
+- G-force reference: Wikipedia — [G-force](https://en.wikipedia.org/wiki/G-force)
+- Human tolerance data derived from NASA & military aviation research

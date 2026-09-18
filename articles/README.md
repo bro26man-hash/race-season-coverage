@@ -1,16 +1,19 @@
 # Articles
 
-Technical analysis, race previews, race reviews, and in-depth features for the 2025–2026 race season.
+All written coverage for the race season lives here.
 
-## Structure
+## Subdirectories
 
-- `technical-notes/` — Physics, engineering, and biomechanics deep-dives (e.g., cornering, tire dynamics, g-force analysis)
-- `race-previews/` — Pre-race analysis, circuit guides, driver profiles
-- `race-reviews/` — Post-race debriefs, performance breakdowns
-- `features/` — Long-form storytelling, historical retrospectives
+- **`technical-notes/`** — Physics and engineering reference documents that support deeper storytelling. These are standalone technical briefs, not narrative articles.
 
-## Guidelines
+## Style Notes
 
-- All technical notes should cite primary sources and include simplified explanations for a general audience.
-- Use consistent heading structure: `# Title`, `## Section`, `### Subsection`.
-- Tag articles with relevant keywords (e.g., `cornering`, `g-force`, `downforce`, `biomechanics`).
+- Use IMRaD structure (Introduction, Methods, Results, Discussion) for technical notes
+- Cite sources in-line; link to data files in `/data/` where applicable
+- Keep technical notes under 2,000 words; use headings for scannability
+
+## Current Contents
+
+| File | Topic |
+|---|---|
+| `technical-notes/cornering-physics.md` | G-force fundamentals, lateral loads, centripetal acceleration, downforce, driver physical demands |

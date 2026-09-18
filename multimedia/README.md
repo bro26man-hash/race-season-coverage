@@ -1,12 +1,21 @@
-# Multimedia
+# Multimedia Assets
 
-On-track photos, onboard video clips, telemetry visualizations, and broadcast highlights.
+All visual and audio assets for race season coverage.
 
-## Suggested Sub-Folders
+## Subdirectories
 
-- `multimedia/photos/` — Pit lane, podium, paddock action
-- `multimedia/video/` — Onboard footage, replay clips, features
-- `multimedia/telemetry/` — GPS tracks, acceleration plots, speed charts
-- `multimedia/audio/` — Driver radio, commentary, ambient track audio
+- **images/** — Photography, technical diagrams, telemetry screenshots, circuit photographs
+- **video/** — Interview clips, onboard footage references, highlight reels
+- **graphics/** — Data visualizations, G-load plots, sector time charts, circuit maps
 
-Organize by race/event name for easy cross-referencing from your articles.
+## Naming Convention
+
+Use lowercase, hyphen-separated names: `g-load-corner Chennai-2025-03-12.jpg`
+
+## Metadata
+
+Each asset should be accompanied by a `.json` or embedded metadata block with:
+- Source / credit
+- Date captured
+- Location / circuit
+- Subject (driver, car, corner)

@@ -1,19 +1,14 @@
 # Articles
 
-All written coverage for the race season lives here.
+Written coverage for the race season — race reports, technical breakdowns, driver profiles, and season summaries.
 
 ## Subdirectories
 
-- **`technical-notes/`** — Physics and engineering reference documents that support deeper storytelling. These are standalone technical briefs, not narrative articles.
+- **technical-notes/** — Deep-dive physics & engineering reference notes (e.g. cornering G-load analysis, downforce mechanics, driver physiological demands)
 
-## Style Notes
+## Style Guide
 
-- Use IMRaD structure (Introduction, Methods, Results, Discussion) for technical notes
-- Cite sources in-line; link to data files in `/data/` where applicable
-- Keep technical notes under 2,000 words; use headings for scannability
-
-## Current Contents
-
-| File | Topic |
-|---|---|
-| `technical-notes/cornering-physics.md` | G-force fundamentals, lateral loads, centripetal acceleration, downforce, driver physical demands |
+- Lead with the story; embed technical details naturally
+- Reference `technical-notes/` for raw data and physics derivations
+- Use metric units (km/h, g, m/s²) with imperial equivalents in parentheses for general-audience pieces
+- Cite data sources in-line; see `data/README.md` for available datasets

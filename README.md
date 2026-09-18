@@ -1,62 +1,47 @@
 # Race Season Coverage
 
-Comprehensive race season coverage project — technical cornering analysis, driver insights, race data, and multimedia assets.
+Comprehensive race season coverage with technical analysis, multimedia assets, and data resources for professional motorsport journalism.
 
-## 📁 Project Structure
+## 📁 Folder Structure
 
 ```
 race-season-coverage/
-├── README.md                  # Project overview (this file)
+├── README.md                  # This file
 ├── articles/                  # Written coverage & technical notes
-│   ├── race-reports/          # Race-by-race reports and summaries
-│   ├── driver-profiles/       # Driver interviews, bios, and analysis
-│   └── technical-notes/       # Deep-dive technical reference documents
-│       └── cornering-physics.md
+│   ├── technical-notes/       # Deep-dive physics & engineering references
+│   ├── race-reports/          # Round-by-round race reports
+│   └── driver-profiles/       # Driver & team technical profiles
 ├── multimedia/                # Visual & audio assets
-│   ├── photos/                # Race photography and stills
-│   ├── videos/                # Highlight reels and analysis clips
-│   └── audio/                 # Interviews and podcasts
-└── data/                      # Raw & processed race data
-    ├── telemetry/             # Car telemetry logs
-    ├── timing-results/        # Sector times and race results
-    └── g-force-data/          # Lateral & longitudinal G-load datasets
+│   ├── photos/                # Race photography & diagrams
+│   ├── video/                 # Highlight clips & analysis videos
+│   └── audio/                 # Podcasts & commentary recordings
+├── data/                      # Raw & processed datasets
+│   ├── telemetry/             # Lap-time & sector telemetry
+│   ├── sensors/               # G-force, throttle, brake sensor logs
+│   └── stats/                 # Season aggregates & comparisons
 ```
 
-## 🏎️ Focus Areas
+## 🏎️ Purpose
 
-- **Cornering Physics** — Lateral G-loads, centripetal acceleration, and the role of aerodynamic downforce
-- **Driver Demands** — Physical and cognitive requirements under high-G conditions
-- **Technical Analysis** — Data-driven breakdowns of racing lines, braking zones, and apex precision
-- **Multimedia Storytelling** — Photos, videos, and audio to complement written coverage
+This repository supports in-depth motorsport coverage with a focus on **technical cornering analysis**. It serves as a structured archive for:
+
+- **Articles** — Long-form writing, technical explainers, and race reports
+- **Multimedia** — Photos, videos, and audio content tied to each round
+- **Data** — Telemetry, sensor logs, and statistical analyses
+
+## 🔬 Technical Focus
+
+Cornering physics is a central theme. Key areas of investigation include:
+
+- **Lateral G-loads** — The side-to-side forces experienced through corners and how they vary by circuit, speed, and car setup
+- **Centripetal Acceleration** — The inward force required to keep the car on its curved path, and how drivers manage it
+- **Downforce & Aerodynamics** — How aerodynamic downforce increases cornering grip and allows higher-latitude G-loading
+- **Driver Physical Demands** — The biomechanical toll of sustained high-G cornering on neck, core, and upper-body muscles
 
 ## 📝 Writing Notes
 
-All technical reference documents live in `articles/technical-notes/`. Each file should:
-1. Define the core physics concept clearly
-2. Cite relevant formulas and real-world racing examples
-3. Translate theory into practical narrative hooks for race coverage
+Technical reference files live in `articles/technical-notes/`. Each file is self-contained and cites its sources so writers can quickly pull verified facts into their pieces.
 
-## 🔬 Technical Reference Sources
+## 🤝 Contributing
 
-- Wikipedia: [G-force](https://en.wikipedia.org/wiki/G-force)
-- Wikipedia: [Centripetal force](https://en.wikipedia.org/wiki/Centripetal_force)
-- Wikipedia: [Downforce](https://en.wikipedia.org/wiki/Downforce)
-
-## 📊 Key Physics Quick Reference
-
-| Concept | Value / Formula |
-|---|---|
-| Standard gravity (1 g) | 9.80665 m/s² ≈ 35.3 km/h velocity change per second |
-| Dragster horizontal acceleration | ~5.3 g |
-| Peak human horizontal tolerance (untrained) | 20 g (short burst) / 6 g (sustained) |
-| Record peak g-force ever survived | 214 g (2003 IndyCar, Kenny Bräck) |
-| Negative g-tolerance limit | −2 to −3 g₀ |
-| Constant acceleration formula | a = v² / (2s) |
-
-## ✍️ How to Use This Repo
-
-1. **Research** — Read `articles/technical-notes/` for physics backgrounds
-2. **Report** — Draft race coverage in `articles/race-reports/`
-3. **Profile** — Document drivers in `articles/driver-profiles/`
-4. **Multimedia** — Organize assets in `multimedia/{photos,videos,audio}/`
-5. **Data** — Log raw numbers in `data/{telemetry,timing-results,g-force-data}/`
+Add new articles under `articles/`, multimedia under `multimedia/`, and datasets under `data/`. Keep file names descriptive and use kebab-case.

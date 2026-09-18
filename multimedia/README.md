@@ -2,38 +2,40 @@
 
 All visual and audio assets for race season coverage.
 
-## Subdirectories
-
-| Path | Contents |
-|---|---|
-| `images/` | Photography, technical diagrams, telemetry screenshots, cornering sequence shots |
-| `video/` | Interview clips, onboard footage references, highlight reels |
-| `graphics/` | Data visualizations, G-load plots, circuit maps, speed traces |
-
-## Asset Naming Convention
+## Structure
 
 ```
-[season]-[round]-[subject]_[variant].[ext]
-Example: 2026-r3-monza-cornering-gload-v2.jpg
+multimedia/
+├── images/      ← Photography, diagrams, telemetry screenshots
+├── video/       ← Interview clips, onboard footage references
+└── graphics/    ← Data visualizations, G-load plots, circuit maps
 ```
 
-## Technical Overlays
+## Asset Catalog
 
-When annotating images or video, include:
-- **G-values** at key moments (e.g., "4.2 g lateral at apex")
-- **Speed** at entry, apex, and exit
-- **Throttle/brake percentages** whereavailable
-- **Driver line** with apex and track limits marked
+### Images
+- Circuit aerials and corner diagrams
+- Telemetry screenshots (speed, braking points, G-load traces)
+- Driver portraits and pit lane action
 
-## Data Visualization Standards
+### Video
+- Onboard footage references (file names and timestamps)
+- Interview clips with drivers and engineers
+- Broadcast highlight reel extracts
 
-- G-load plots: Y-axis in g, X-axis in time or distance
-- Color-code: lateral (blue), longitudinal (red), vertical (green)
-- Always annotate peak values and their location on track
-- Cite data source from `data/telemetry/`
+### Graphics
+- G-load plots per corner (lateral & longitudinal)
+- Speed delta charts vs. reference lap
+- Circuit maps with braking/acceleration zones
 
-## Licensing & Credits
+## Naming Convention
 
-- Original photography: © Race Season Coverage / [your byline]
-- Telemetry data: Provided by series organizers / team partnerships
-- Derived graphics: Credit the dataset in `data/`
+`[season]_[round]_[circuit]_[type]_[description].[ext]`
+
+Example: `2025_R06_Monaco_image_corner3_ng-force.png`
+
+## Usage Notes
+
+- Compress images to ≤ 2 MB for web use; keep originals in `images/raw/`.
+- Video refs are pointer files only — actual media stored in cloud CDN.
+- All graphics must include data source attribution.

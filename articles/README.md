@@ -1,30 +1,25 @@
 # Articles
 
-Written race coverage — reports, technical breakdowns, driver profiles, and season summaries.
+Written coverage for the race season.
 
-## Subdirectories
+## Structure
 
-| Path | Purpose |
-|---|---|
-| `technical-notes/` | Deep-dive physics & engineering reference notes (G-force, cornering dynamics, data analysis) |
-| `race-reports/` | Per-race narrative reports with technical context |
-| `driver-profiles/` | Driver physical & psychological demand analyses |
-| `season-summaries/` | Championship-wide trend pieces and season wrap-ups |
+- **`technical-notes/`** — Deep-dive physics & engineering reference notes.
+  - `cornering-physics.md` — Lateral G-loads, centripetal acceleration, downforce, and driver demands.
 
 ## Style Guide
 
-- **Tone:** Authoritative yet accessible — technical depth for informed readers
-- **Units:** Always include both metric and imperial where relevant (g, m/s², mph, kg)
-- **Citations:** Link to original data sources; reference `data/` datasets inline
-- **Formatting:** Use headers, blockquotes for key takeaways, and tables for comparisons
-- **Length:** Feature articles 800–1,500 words; technical notes 400–800 words
+- Lead with the story; anchor with data.
+- Reference `technical-notes/` for physics context.
+- Use metric units (g, m/s², km/h) alongside imperial where relevant.
+- Cite telemetry or data sources from `data/` when making performance claims.
 
-## Key Terms Reference
+## Article Types
 
-- **g (g-force):** Standard gravity = 9.80665 m/s² — the baseline for all acceleration references
-- **Lateral G:** Side-to-side acceleration through corners; the primary cornering metric
-- **Centripetal acceleration:** Inward acceleration keeping the car on its curved path
-- **Downforce:** Aerodynamic load pressing the car into the track, increasing grip
-- **G-LOC:** G-induced loss of consciousness — critical safety threshold
-
-See `technical-notes/cornering-physics.md` for the full G-force reference.
+| Type | Location | Notes |
+|---|---|---|
+| Race Reports | `articles/` | Post-race analysis, key moments, standings |
+| Technical Breakdowns | `articles/` | Car design, strategy, engineering |
+| Driver Profiles | `articles/` | Career stats, physical preparation, interviews |
+| Season Summaries | `articles/` | Mid-season and end-of-season retrospectives |
+| Technical Notes | `articles/technical-notes/` | Reference material, physics derivations, data primers |

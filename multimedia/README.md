@@ -1,21 +1,39 @@
-# Multimedia Assets
+# Multimedia
 
 All visual and audio assets for race season coverage.
 
 ## Subdirectories
 
-- **images/** — Photography, technical diagrams, telemetry screenshots, circuit photographs
-- **video/** — Interview clips, onboard footage references, highlight reels
-- **graphics/** — Data visualizations, G-load plots, sector time charts, circuit maps
+| Path | Contents |
+|---|---|
+| `images/` | Photography, technical diagrams, telemetry screenshots, cornering sequence shots |
+| `video/` | Interview clips, onboard footage references, highlight reels |
+| `graphics/` | Data visualizations, G-load plots, circuit maps, speed traces |
 
-## Naming Convention
+## Asset Naming Convention
 
-Use lowercase, hyphen-separated names: `g-load-corner Chennai-2025-03-12.jpg`
+```
+[season]-[round]-[subject]_[variant].[ext]
+Example: 2026-r3-monza-cornering-gload-v2.jpg
+```
 
-## Metadata
+## Technical Overlays
 
-Each asset should be accompanied by a `.json` or embedded metadata block with:
-- Source / credit
-- Date captured
-- Location / circuit
-- Subject (driver, car, corner)
+When annotating images or video, include:
+- **G-values** at key moments (e.g., "4.2 g lateral at apex")
+- **Speed** at entry, apex, and exit
+- **Throttle/brake percentages** whereavailable
+- **Driver line** with apex and track limits marked
+
+## Data Visualization Standards
+
+- G-load plots: Y-axis in g, X-axis in time or distance
+- Color-code: lateral (blue), longitudinal (red), vertical (green)
+- Always annotate peak values and their location on track
+- Cite data source from `data/telemetry/`
+
+## Licensing & Credits
+
+- Original photography: © Race Season Coverage / [your byline]
+- Telemetry data: Provided by series organizers / team partnerships
+- Derived graphics: Credit the dataset in `data/`

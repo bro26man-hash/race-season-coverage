@@ -1,19 +1,30 @@
 # Articles
 
-Written coverage for the race season, including race reports, technical breakdowns, driver profiles, and season summaries.
+This folder contains all written coverage for the race season.
 
-## Subdirectories
+## Structure
 
-| Path | Purpose |
-|---|---|
-| `technical-notes/` | Deep-dive physics & engineering reference notes (cornering G-load analysis, aerodynamics, etc.) |
-| `race-reports/` | Event-by-event race coverage and highlights |
-| `driver-profiles/` | Season-long driver assessments and interviews |
-| `season-summaries/` | Mid-season and end-of-season composite analyses |
+```
+articles/
+├── README.md                  ← This index file
+├── race-reports/              ← Weekend round-ups, feature stories
+├── driver-profiles/           ← In-depth driver & team profiles
+├── season-summaries/          ← Mid-season & end-of-season retrospectives
+└── technical-notes/           ← Physics & engineering deep dives
+    └── cornering-physics.md   ← G-force & cornering dynamics reference
+```
 
 ## Style Guide
 
-- Lead with the human story; support with data.
-- Reference technical notes in `articles/technical-notes/` for physics context.
-- Use metric units (km/h, seconds, g) as primary; include imperial equivalents in parentheses for broad audiences.
-- Cite telemetry sources in `data/` inline with links.
+- **Voice:** Authoritative yet accessible — explain the science, then connect it to what fans see on track.
+- **Technical terms:** First use should be defined (e.g., "lateral G-load (the side-to-side acceleration experienced through a corner").
+- **Data citations:** Reference files in `../data/` whenever possible; link to telemetry screenshots from `../multimedia/graphics/`.
+- **Length:** Feature articles 800–1,500 words; technical notes 400–800 words.
+
+## Themes
+
+- Cornering physics & G-load analysis
+- Driver physical demands & G-tolerance
+- Aerodynamic downforce & its role in cornering speed
+- Tire grip limits and load transfer
+- Sector-by-sector technical breakdowns
